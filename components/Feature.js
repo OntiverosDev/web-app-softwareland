@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
-import Image from 'next/image'
 
 
 
@@ -13,7 +12,7 @@ const FeatureBox = (props) => {
         <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
           <Col md={5} >
             <div>
-              <Image src='images/Dev2.png' alt="" className="img-fluid d-block mx-auto"/>
+              <img src='images/Dev2.png' alt="" className="img-fluid d-block mx-auto"/>
             </div>
           </Col>
             <Col md={{size:6, offset:1}}>
@@ -41,7 +40,7 @@ const FeatureBox = (props) => {
         </Col>
         <Col md={{size:5, offset:1}} className="mt-5 mt-sm-0">
           <div>
-            <Image src={feature.img} alt="" className="img-fluid d-block mx-auto"/>
+            <img src={feature.img} alt="" className="img-fluid d-block mx-auto"/>
           </div>
         </Col>
       </Row>
@@ -52,9 +51,9 @@ const FeatureBox = (props) => {
 }
 const Feature = () => {
 const features = [
-    {id : 1, Image : "./images/dev.png", title : "Android", desc : "diseñado para dispositivos móviles con pantalla táctil, como teléfonos inteligentes, tabletas, relojes inteligentes (Wear OS), automóviles con otros sistemas", link : "/"},
-    {id : 2, Image : "./images/Dev2.png", title : "React Native", desc : "is an open-source UI software framework created by Facebook, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.", link : "/"},
-    {id : 3, Image : "./images/dev.png", title : "IOS", desc : "iOS es un sistema operativo móvil de la multinacional Apple Inc. Originalmente desarrollado para el iPhone, después se ha usado en dispositivos como el iPod touch y el iPad.", link : "/"},
+    {id : 1, img : "./images/dev.png", title : "Android", desc : "diseñado para dispositivos móviles con pantalla táctil, como teléfonos inteligentes, tabletas, relojes inteligentes (Wear OS), automóviles con otros sistemas", link : "/"},
+    {id : 2, img : "./images/Members.png", title : "React Native", desc : "is an open-source UI software framework created by Facebook, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.", link : "/"},
+    {id : 3, img : "./images/Dev2.png", title : "IOS", desc : "iOS es un sistema operativo móvil de la multinacional Apple Inc. Originalmente desarrollado para el iPhone, después se ha usado en dispositivos como el iPod touch y el iPad.", link : "/"},
   ];
 return (
     <section className="section" id="feature">

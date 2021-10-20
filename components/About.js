@@ -12,7 +12,7 @@ return (
             <div className="title text-center mb-5">
               <h3 className="fw-bolder text-dark">About <span className="text-warning">Us</span></h3>
               <p className="text-muted">By injected humour, or randomised words which don't look even slightly believable.</p>
-              you&apos;re free
+              
             </div>
           </Col>
         </Row>
